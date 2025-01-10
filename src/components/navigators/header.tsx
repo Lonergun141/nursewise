@@ -10,26 +10,25 @@ export default async function Header() {
 			<div className="container mx-auto flex h-14 items-center justify-between px-4">
 				{/* Logo */}
 				<Link href="/" className="text-xl font-semibold tracking-tight hover:opacity-80">
-					NurseWise
+					Nurse<span className='text-pink-400'>Wise</span>
 				</Link>
 
-				{/* <div className="hidden md:flex items-center gap-8 text-sm">
-					<Link href="/features" className="hover:text-gray-600">
+				 <div className="hidden md:flex items-center gap-8 text-sm">
+					<Link href="/features" className="hover:text-pink-400">
 						Features
 					</Link>
-					<Link href="/pricing" className="hover:text-gray-600">
-						Pricing
+					<Link href="/pricing" className="hover:text-pink-400">
+						Premium
 					</Link>
-					<Link href="/about" className="hover:text-gray-600">
+					<Link href="/about" className="hover:text-pink-400">
 						About
 					</Link>
-				</div> */}
+				</div> 
 
-				{/* Action Buttons */}
 				<div>
 					{userId ? (
 						<div>
-							<UserButton showName />
+							<UserButton showName/>
 						</div>
 					) : (
 						<div className="flex items-center gap-4">
@@ -40,7 +39,7 @@ export default async function Header() {
 							</Link>
 							<Link
 								href="/sign-up"
-								className="inline-flex h-9 px-4 items-center justify-center rounded-md bg-black text-sm font-medium text-white shadow transition-colors hover:bg-gray-800">
+								className="inline-flex h-9 px-4 items-center justify-center rounded-md bg-pink-400 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800">
 								Sign Up
 							</Link>
 						</div>

@@ -6,7 +6,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<ClerkProvider
     appearance={{
-      variables: { colorPrimary: "#000000" },
+      variables: { colorPrimary: "#212121" },
       elements: {
         formButtonPrimary:
           "bg-black border border-black border-solid hover:bg-white hover:text-black",
