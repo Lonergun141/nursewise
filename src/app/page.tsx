@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Landing() {
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
@@ -11,9 +13,9 @@ export default function Landing() {
 					caregivers. Enhance patient care with cutting-edge AI technology.
 				</p>
 				<div className="space-x-4">
-					<button className="bg-pink-500 text-white px-10 py-4 rounded-lg hover:bg-pink-600 transition duration-300 transform hover:scale-105">
+					<Link href="/sign-up" className="bg-pink-500 text-white px-10 py-4 rounded-lg hover:bg-pink-600 transition duration-300 transform hover:scale-105">
 						Get Started
-					</button>
+					</Link>
 					<button className="bg-transparent border border-pink-500 text-pink-500 px-10 py-4 rounded-lg hover:bg-pink-50 transition duration-300 transform hover:scale-105">
 						Learn More
 					</button>
