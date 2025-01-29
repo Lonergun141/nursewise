@@ -37,49 +37,12 @@ export default async function Header() {
 							className="text-gray-700 hover:bg-gray-100 hover:text-pink-500 transition-colors py-2 px-3 rounded-md">
 							My Projects
 						</Link>
-
-						<Link
-							href="/settings"
-							className="text-gray-700 hover:bg-gray-100 hover:text-pink-500 transition-colors py-2 px-3 rounded-md">
-							Settings
-						</Link>
 					</div>
 
 					{/* Profile Section at the Bottom */}
 					<div className="px-6 py-4">
 						<div className="flex items-center w-full">
-							<UserButton
-								showName
-								appearance={{
-									elements: {
-										// Main button styles
-										userButtonBox: 'hover:bg-gray-100 rounded-full',
-										userButtonTrigger: 'rounded-full',
-
-										// Avatar styles
-										avatarBox: 'w-10 h-10',
-
-										// Username styles
-										userButtonOuterIdentifier: 'text-gray-700 font-medium',
-
-										// Dropdown menu styles
-										userButtonPopoverCard:
-											'bg-white shadow-lg rounded-lg border border-gray-200',
-										userButtonPopoverActions: 'p-2',
-										userPreviewMainIdentifier: 'font-semibold text-gray-900',
-										userPreviewSecondaryIdentifier: 'text-gray-500',
-
-										// Menu items
-										userButtonPopoverActionButton:
-											'w-full text-left px-4 py-2 hover:bg-gray-100 rounded-md text-gray-700',
-										userButtonPopoverActionButtonText: 'text-sm',
-
-										// Sign out button
-										signOutButton:
-											'w-full text-left px-4 py-2 hover:bg-red-50 text-red-600 rounded-md',
-									},
-								}}
-							/>
+							<UserButton showName />
 						</div>
 					</div>
 				</div>
