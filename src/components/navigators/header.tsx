@@ -14,7 +14,7 @@ export default async function Header() {
 					{/* Logo */}
 					<div className="flex h-16 items-center justify-between px-6 ">
 						<Link
-							href="/"
+							href=""
 							className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity">
 							Nurse<span className="text-pink-500">Wise</span>
 						</Link>

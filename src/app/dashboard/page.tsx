@@ -12,7 +12,7 @@ export default function Page() {
 			</div>
 
 			<section className="container grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-				{[{ title: 'Drug Study' }, { title: 'Drug Study' }, { title: 'Drug Study' }].map(
+				{[{ title: 'Drug Study' }, { title: 'Pathophysiology' }, { title: 'Nursing Care Plan' }].map(
 					(item, index) => (
 						<div
 							key={index}
